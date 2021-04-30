@@ -1,0 +1,113 @@
+/eventexp_begin [1-9999999%]
+/eventexp_end
+/eventitem_begin [1-9999999%]
+/eventitem_end
+/eventmoney_begin [1-9999999%]
+/eventmoney_end
+
+Fun:
+/bighead [on/off] = All Online Characters in Bighead
+/bighand [on/off] = All Online Characters in Big Hands(same as weapons too)
+
+Characters Managements:
+/kickuser [CharID] = allows to disconnect user
+/charinfo_ci [CharID] = Shows the character information by character ID
+/charinfo_cn [CharName] = Shows the character information by character name
+
+Move Commands:
+/move2char [CharName] = Move to Online Character 
+/m2c [CharID]
+/move2gate [0-99] = Move to available map gate
+/m2g [0-99]
+/move2pos [##,##,X,Y] = Move to a coordinate
+/m2p [##,##,X,Y]
+
+Other Commands:
+/fps_limit [on/off]
+/freepk [on/off]
+/visible [on/off]
+/itemhold 
+/visible [on/off] = character visibility
+/month [1-12] = Set Month in number
+/time [1-24] = Set Time in 24 hour clock
+/weather [clear/snow/begin/spore/leave]
+/dsp 
+/? 
+EP4 Game Commands for GM
+
+
+Quote: Events:
+/eventexp_begin [1-9999999%]
+/eventexp_end
+/eventitem_begin [1-9999999%]
+/eventitem_end
+/eventmoney_begin [1-9999999%]
+/eventmoney_end
+/event_ex_begin [speed/aspeed/attack]
+/event_ex_end [speed/aspeed/attack]
+
+Fun:
+/bighead [on / off] = All Online Characters in Bighead
+/bighand [on / off] = All Online Characters in Big Hands(same as weapons too)
+
+Characters Managements:
+/kickuser [CharID] = allows to disconnect user
+/charinfo_ci [CharID] = Shows the character information by character ID
+/charinfo_cn [CharName] = Shows the character information by character name
+/chatblock_ci [CharID, minute] = block character in minutes by character ID
+/chatblock_cn [CharName, minute] = block character in minutes by character name
+/chatblock_ua [uaccount, minute] = block character in minutes by user acount
+/genchar_ci [charID]
+/genchar_cn [CharName]
+
+Move commands:
+/move2char_cn [CharName] = Move to Online Character 
+/move2char_ci [CharName] = Move to Online Character 
+/m2c_ci [CharID]
+/m2c_cn [Charname]
+/move2gate [0-99] = Move to available map gate
+/m2g [0-99]
+/move2pos [##,##,X,Y] = Move to a coordinate
+/m2p [##,##,X,Y]
+
+Note: maps code (#) can be found on maps.list or maps.ini
+
+Other Commands:
+/server [delay/level1/level2/force/shutdown]
+/weather [clear/snow/begin/spore/leave]
+/freepk_on
+/freepk_off
+/warning_msg [on/off]
+/profile [on/off]
+/pk_mode [on/off]
+/visible [on/off] = character visibility
+/month [1-12] = Set Month in number
+/time [1-24] = Set Time in 24 hour clock
+/itemhold
+/mob_del_ex
+/mob_del
+/mob_gen_ex
+/mob_gen
+/where_npc
+/dsp
+/for
+/whois
+/? = Emote Icons 
+
+Summoning Mobs:
+
+/mob_gen 62,2,14,14
+
+the 62,2 is the mobID that can be found on CrowStrTable.txt
+while the 14,14 is the coordinates that can be seen on
+top of screen compass
+
+Loading & Unloading Event Maps in Game 
+
+/lev_new [filename.Lev] = Load Event Map
+/lev_del = UnLoad Event Map
+
+/lev_new w_total_suryun_01.lev 
+/lev_new w_total_suryun_02.lev 
+/lev_new w_total_suryun_03.lev 
+/lev_new w_total_suryun_04.lev 

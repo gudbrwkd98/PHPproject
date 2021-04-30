@@ -1,0 +1,131 @@
+/* ----------------  -------------------  ---------------- */
+/* ----------------  STEP_PROGRESS_CODES  ---------------- */
+/* ----------------  -------------------  ---------------- */
+/* container for step progress */
+.progress-container{
+    width: 100%;
+    position: static;
+    z-index: 1;
+    padding: 50px;
+}
+/* separates bullets on a row */
+.progressbar li{
+    float: left;
+    width: 10%;
+    position: relative;
+    text-align: center;
+    list-style-type: none;
+}
+/* make a counter for the steps */
+.progressbar{
+    counter-reset: step;
+}
+/* makes the circles 'before' the entities */
+.progressbar li:before{  
+    /* creates the step counter */
+    content:counter(step);
+    counter-increment: step;
+    /* makes it into a square*/
+    width: 30px;
+    height: 30px;
+    background: white;              /* turns the background collor of bullet into white */
+    border: 2px solid #bebebe;      /* add a solid border to the counter bullet */
+    display: block;                 /* turns the bullet into a separate entity */
+    margin: 0 auto 10px auto;       /* fixes the placement of the bullet to hover above the label */
+    color: #bebebe;                 /* changes font color of text in step bullet */
+    border-radius: 50%;             /* makes the bullet shape circular */
+    text-align: center;             /* centers the counter in the bullet */
+    font-weight: bold;              /* makes the counter bold */
+    line-height: 27px;
+}
+/* makes the track 'after' the entities */
+.progressbar li:after{
+    content: '';
+    position: absolute;
+    width:  100%;
+    height: 3px;            /* thickness of the track */
+    background: #979797;    /* color of the track */
+    top: 15px;
+    right: -50%;            /* makes the track move to the right of the circle */
+    z-index: -1;            /* puts the track behing the circle */
+}
+/* removes the track from the last step */
+.progressbar li:last-child:after{
+    content: none;
+}
+.progressbar li.active + li:after{
+    background: red;
+}
+/* makes the active element's circle red */
+.progressbar li.active + li:before{
+    background: red;
+    border-color: red;
+    color: white;
+}
+/* ----------------  -----------------  ---------------- */
+/* ----------------  ZOOM_BUTTON_CODES  ---------------- */
+/* ----------------  -----------------  ---------------- */
+.zoom:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.zoom {
+  transition: transform .2s; /* Animation */
+}
+
+
+/* ----------------  -----------------  ---------------- */
+/* ----------------  custom PHONE# box  ---------------- */
+/* ----------------  -----------------  ---------------- */
+
+
+input + span {
+  padding-right: 30px;
+}
+
+input:invalid+span:after {
+  position: absolute; content: '✖';
+  padding-left: 5px;
+  color: #8b0000;
+}
+
+input:valid+span:after {
+  position: absolute;
+  content: '✓';
+  padding-left: 5px;
+  color: #009000;
+}
+
+/* ----------------  -----------------  ---------------- */
+/* ----------------  custom select box  ---------------- */
+/* ----------------  -----------------  ---------------- */
+.select-style {
+    border: 1px solid #d8d8d8;
+    width: auto;
+    overflow: hidden;
+    background: #fafafa url("img/icon-select.png") no-repeat 90% 50%;
+    border-radius: 10rem;
+}
+
+.select-style select {
+    font-size: 0.8rem;
+    padding: 14px 16px;
+    width: 130%;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+}
+
+.select-style select:focus {
+    outline: none;
+}
+.select-style:required:invalid {
+  color: gray;
+}
+option[value=""][disabled] {
+  display: none;
+}
+option {
+  color: black;
+}

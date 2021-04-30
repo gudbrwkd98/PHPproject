@@ -1,0 +1,29 @@
+(userid = 'susnaman1'or
+userid = 'banaag3'OR
+userid = '15kdaniel'OR
+userid = 'plokplok'OR
+userid = 'dom1234'OR
+userid = 'lesley101'OR
+userid = 'gengen'OR
+userid = 'lancedmr'OR
+userid = 'aaaqqq12'OR
+userid = 'popsickle1'OR
+userid = 'ronn12'OR
+userid = 'gagamba1'OR
+userid = 'nics15'OR
+
+
+userid = 'greenvelvet'OR
+userid = 'agustin21'OR
+userid = 'inggo'OR
+userid = 'wafumatthew'OR
+userid = 'purplelabel'OR
+userid = 'darkjayvin'OR
+userid = 'ajie25' OR
+userid = 'jugzfroilan'OR
+userid = 'killmenow' OR
+userid = 'thuglife' OR
+userid = 'rhonzkiez'
+
+)
+

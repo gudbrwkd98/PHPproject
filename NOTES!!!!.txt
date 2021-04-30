@@ -1,0 +1,58 @@
+
+FIXED :
+applicant > personal profile
+	hide buttons if values are null
+		values for "application form" button: 						eteeap plans, formal education, work exp, 
+		values for "ETEEAP Additional Requirements" button: 		eteeap plans
+		values for "Narrative Reports" button: 						engagements, community
+		values for "Curriculum Vitae" button: 						formal educ, engagements, community, work exp
+
+		applicant > certifications
+	add & edit
+		dont save if (date_certified == expiry_date || date_certified > expiry_date)
+
+		applicant > organization
+	add & edit
+		dont save if (start_date == end_date || start_date > end_date)
+
+applicant > hobbies 
+	add > backend code add attachment
+
+	applicant > special skills 
+	add > backend code add attachment
+
+	applicant > work activity
+	add > backend code add attachment
+
+	applicant > volunteer 
+	add > backend code add attachment
+
+	applicant > travel 
+	add > backend code add attachment
+
+	applicant > engagements
+	add narrative report
+
+applicant > formaleducation
+	add form
+	input must have one of each only no duplicates [1gradlvl, 1tertlvl, 1secondlvl, 1elemlvl]
+	one upload
+
+	admin/staff/dean > view portfolio
+	backend codes for calling attachment for the ff:
+		hobbies, special skills, work activity, volunteer, travels
+
+
+admin > schools
+	add modal > change dropdown to input type="text"
+	edit modal > change dropdown to input type="text"
+
+admin > programs
+	add modal > change input type="text" to dropdown 
+	edit modal > change input type="text" to dropdown 
+
+
+admin/staff/dean > view portfolio
+	backend codes for viewing narrative report for engagements
+
+		update progress > change status dropdown to radio button - drop down to auto selected. ang pagkaka alam ko dito ayaw lang ni mam na  may drop down kung iisa lang choices. hnd kasi naka auto select dati.

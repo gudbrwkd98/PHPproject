@@ -1,0 +1,26 @@
+1. applicant submits application
+	system automatically puts remark in user's "Remarks"
+
+	Location		Stage				status			date			Remarks						attachment
+	Applicant		Submitted			---				timestamp		
+
+2. once eteeap staff/admin has opened the user's profile system will auto update
+
+	Location		Stage				status			date			Remarks						attachment
+	Applicant		Submitted			---				timestamp		
+	ETEEAP			Initial Screening	Received		timestamp		submit PSA certificate		
+
+3. user submits documents in 'additional documents' [[ if kaya pa update ng remarks automatically.. otherwise istate ntn sa limitations.. pero kxe ang gstu ni mam was notifications thru email for any updates]]
+
+	Location		Stage				status			date			Remarks						attachment
+	Applicant		Submitted			---				timestamp		
+	ETEEAP			Initial Screening	Received		timestamp		submit PSA certificate	
+	Applicant 		Initial Screening	Pending			timestamp		PSA uploaded				
+
+4. assuming all documents are completed ETEEAP staff/admin forwards the user's portfolio to the dean
+
+	Location		Stage				status			date			Remarks						attachment
+	Applicant		Submitted			---				timestamp		
+	ETEEAP			Initial Screening	Received		timestamp		submit PSA certificate	
+	Applicant 		Initial Screening	Pending			timestamp		PSA uploaded				
+	Dean of SIT 	Initial Screening

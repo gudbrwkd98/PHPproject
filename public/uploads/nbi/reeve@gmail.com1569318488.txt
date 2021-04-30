@@ -1,0 +1,17 @@
+
+remove ot skill
+remove ring upgrade
+ fairy
+ 
+
+
+feather = flame
+flame = attack speed increase 0.5	
+remove 500/200/100 pp boxes
+
+tw time
+rr time
+cw time
+rewards
+
+boss rewards
